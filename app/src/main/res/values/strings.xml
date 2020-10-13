@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IS Notes</string>
+    <string name="title_main">IS Notes</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_notes">No Notes Found</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="description">Description*</string>
+    <string name="save">SAVE</string>
+    <string name="title">Title*</string>
+    <string name="sucess">Note successfully saved</string>
+    <string name="delete_success">Note Deleted</string>
+</resources>

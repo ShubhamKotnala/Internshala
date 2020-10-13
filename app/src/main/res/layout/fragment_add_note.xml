@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:gravity="center"
+        android:minHeight="300dp"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:isScrollContainer="false"
+                android:padding="10dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edit_text"
+                android:hint="@string/title"
+                android:gravity="start|top"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edit_text"
+                android:hint="@string/description"
+                android:gravity="start|top"
+                android:minHeight="300dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_solid_blue"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="@string/save"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+</RelativeLayout>
